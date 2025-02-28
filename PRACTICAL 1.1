@@ -1,0 +1,189 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "a6d06a54",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "aaaabbbbccccb\n"
+     ]
+    }
+   ],
+   "source": [
+    "ip=\"a4b4c4b1\"\n",
+    "op=\"\"\n",
+    "for i in range(0,len(ip),2):\n",
+    "    char=ip[i]\n",
+    "    count=int(ip[i+1])\n",
+    "    op+=char*count\n",
+    "print(op)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "06b7e39b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The original list: [[3, 5, 4], [6, 2, 4], [1, 3, 6]]\n",
+      "The list frequency of elements is: {3: 2, 5: 1, 4: 2, 6: 2, 2: 1, 1: 1}\n"
+     ]
+    }
+   ],
+   "source": [
+    "test_list = [[3, 5, 4], [6, 2, 4], [1, 3, 6]]\n",
+    "freq = {}\n",
+    "for sublist in test_list:\n",
+    "    for element in sublist:\n",
+    "        if element in freq:\n",
+    "            freq[element] += 1\n",
+    "        else:\n",
+    "            freq[element] = 1\n",
+    "print(\"The original list:\", test_list)\n",
+    "print(\"The list frequency of elements is:\", freq)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "eb339df8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[3, 4, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "list1 = [1, 2, 3, 4, 5]\n",
+    "list2 = [4, 5, 3, 7, 8]\n",
+    "common_elements = []\n",
+    "for element in list1:\n",
+    "    if element in list2:\n",
+    "        common_elements.append(element)\n",
+    "print(common_elements)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "7419cae4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['S', 'M', 'R']\n"
+     ]
+    }
+   ],
+   "source": [
+    "names_list = ['Sohan', 'Mohan', 'Rohan']\n",
+    "first_letters = []\n",
+    "for name in names_list:\n",
+    "    first_letters.append(name[0])\n",
+    "print(first_letters)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "536063e1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "python\n"
+     ]
+    }
+   ],
+   "source": [
+    "list_words = ['pandas', 'numpy', 'flask', 'python', 'python']\n",
+    "most_common = max(list_words, key=list_words.count)\n",
+    "print(most_common)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "6438ab65",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Length of the string: 13\n"
+     ]
+    }
+   ],
+   "source": [
+    "input_string = \"Hello, World!\"\n",
+    "print(\"Length of the string:\", len(input_string))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "30402e11",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Length of the list: 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "input_list = [1, 2, 3, 4, 5]\n",
+    "print(\"Length of the list:\", len(input_list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "db199a02",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
